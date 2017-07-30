@@ -1,0 +1,43 @@
+<!--connble.wxml-->
+
+<view class="title">广播信息</view>
+<view class="line"></view>
+<view class="item">RSSI      = {{RSSI}}</view>
+<view class="line"></view>
+<view class="item">name      = {{name}}</view>
+<view class="line"></view>
+<view class="item">deviceId  = {{deviceId}}</view>
+<view class="line"></view>
+<view class="item">advData   = {{advData}}</view>
+<view class="line"></view>
+
+<view class="connect" bindtap="bindConnect">建立连接</view>
+
+<view class="title">service uuid / primary</view>
+<view hover-class="hover_bgc"
+ wx:key="{{item.uuid}}"
+ wx:for="{{serviceList}}"
+ bindtap="selectUUID" 
+ data-uuid="{{item.uuid}}">
+<view class="line"></view>
+  <view class="item">{{item.uuid}} - {{item.isPrimary}}</view>
+</view>
+<view class="line"></view>
+
+<view wx:if="{{select == 1}}">
+<view class="title">selected service</view>
+<view class="title">{{serviceUUID}}</view>
+</view>
+
+<view class="connect" bindtap="getCharc">获取characteristics</view>
+
+<view class="title">characteristics</view>
+<view wx:for="{{characteristics}}">
+<view class="line"></view>
+  <view class="item">{{item.uuid}}</view>
+  <view class="item">read - {{item.properties.read}}</view>
+  <view class="item">write - {{item.properties.write}}</view>
+  <view class="item">notify - {{item.properties.notify}}</view>
+  <view class="item">indicate - {{item.properties.indicate}}</view>
+</view>
+<view class="line"></view>

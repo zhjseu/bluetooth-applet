@@ -1,0 +1,14 @@
+/* scanble.wxss */
+
+.title {
+  padding: 40rpx 40rpx 40rpx;
+  font-size: 32rpx;
+  text-align: center;
+  color: #666666;
+}
+
+.item {
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  width: 100%;
+}

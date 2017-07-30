@@ -1,0 +1,16 @@
+/* index.wxss */
+
+.icon {
+  width: 168rpx;
+  height: 168rpx;
+  margin: 20rpx;
+  border-radius: 60%;
+}
+
+.text {
+  margin-top: 200px;
+  width: 100%;
+  font-size: 40rpx;
+  text-align: center;
+  background-color: #ADD8E6;
+}

@@ -1,0 +1,18 @@
+
+{
+  "pages": [
+    "pages/index/index",
+    "pages/scanble/scanble",
+    "pages/connble/connble"
+  ],
+
+  "window": {
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "zhjseu@qq.com",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": false,
+    "backgroundColor": "#bbbbbb",
+    "backgroundTextStyle": "dark"
+  }
+
+}

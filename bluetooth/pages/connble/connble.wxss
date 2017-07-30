@@ -1,0 +1,18 @@
+/* connble.wxss */
+
+.title {
+  padding: 5rpx 40rpx 5rpx;
+  font-size: 32rpx;
+  text-align: center;
+  color: #666666;
+}
+
+.item{
+  height: 50rpx;
+}
+.connect{
+  margin-top: 5rpx;
+  margin-bottom: 5rpx;
+  text-align: center;
+  background-color: #ADD8E6;
+}

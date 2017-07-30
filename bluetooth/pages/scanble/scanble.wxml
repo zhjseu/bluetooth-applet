@@ -1,0 +1,19 @@
+<!--scanble.wxml-->
+
+<view class="title">设备列表</view>
+
+<view hover-class="hover_bgc" 
+wx:for="{{list}}" 
+wx:key="{{item.deviceId}}" 
+bindtap="connectDevice" 
+data-deviceid="{{item.deviceId}}" 
+data-name="{{item.name}}" 
+data-rssi="{{item.RSSI}}"
+data-advdata="{{item.advertisData}}">
+  <view class="line"></view>
+  <view class="item">
+    {{index}} : {{item.deviceId}} - {{item.name}}
+  </view>
+</view>
+
+<view class="line"></view>

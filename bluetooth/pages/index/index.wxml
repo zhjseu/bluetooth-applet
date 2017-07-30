@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="container">
+<image class="icon" src="../../images/icon.png"></image>
+<view class="text" hover-class="hover_bgc" bindtap="scanList">搜索设备</view>
+</view>
